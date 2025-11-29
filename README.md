@@ -9,7 +9,7 @@
 
 # Pinout
 | Function | Pin | Description |
-| -------------   | ----------- |
+| -------------   | ----------- | ----------- |
 | Difficulty Selection Button   | PD2 | This button is used to confirm the difficulty level (easy, medium, hard), which determines the rate at which the hunger level decreases. 
 | Feed Button | PD2 | When pressed, the pet’s hunger level is restored to full. This button only functions as a feed button once the difficulty has been selected.
 | Hunger LED Bar (4 LEDs) | PB0-PB3 | Configured as GPIO outputs. These four LEDs display the pet’s hunger level, where four LEDs indicate full health, and all LEDs off indicate death.
