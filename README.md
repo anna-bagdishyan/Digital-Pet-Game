@@ -1,3 +1,1 @@
-# Digital-Pet-Game
-
 # Introduction
