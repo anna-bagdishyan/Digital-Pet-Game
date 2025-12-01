@@ -1,4 +1,4 @@
-# Introduction This is a test
+# Introduction
 
 # Results and Video Demonstration Links
 
