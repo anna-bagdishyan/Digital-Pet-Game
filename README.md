@@ -15,11 +15,13 @@ The Digital Pet game was successfully implemented and functions as intended. The
 
 A countdown timer was also implemented using the seven-segment display, and the PF1 LED represents the pet’s heartbeat, with its brightness adjusted based on the pet’s hunger level. The game correctly implements both win and loss conditions, displaying “YOU WIN!” or “YOU LOSE!” on the LCD and flashing the leds appropriately.
 
+
 ![win_condition](https://github.com/user-attachments/assets/b0ea390f-5208-416a-a797-69eed7748361)
 Figure 1 - Board when the win condition is met
 
 ![lose_condition](https://github.com/user-attachments/assets/719184d3-72fc-460b-8199-b99a24447959)
 Figure 2 - Board when the lose condition is met
+
 
 Several challengers were encountered throughout the project. One major issue involved the survival timer, which originally decreased much faster than one second. This happened because the countdown was tied to the speed of the hunger LED decay, causing the timer to go down more quickly on higher difficulty levels where the LED turned off faster. To fix this, Timer 1A was dedicated to the survival timer logic, which allowed timer to decrement every one second.
 
