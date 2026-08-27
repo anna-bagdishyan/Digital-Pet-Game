@@ -23,7 +23,7 @@ Figure 1 - Board when the win condition is met
 Figure 2 - Board when the lose condition is met
 
 
-Several challengers were encountered throughout the project. One major issue involved the survival timer, which originally decreased much faster than one second. This happened because the countdown was tied to the speed of the hunger LED decay, causing the timer to go down more quickly on higher difficulty levels where the LED turned off faster. To fix this, Timer 1A was dedicated to the survival timer logic, which allowed the countdown timer to decrement every one second.
+Several challenges were encountered throughout the project. One major issue involved the survival timer, which originally decreased much faster than one second. This happened because the countdown was tied to the speed of the hunger LED decay, causing the timer to go down more quickly on higher difficulty levels where the LED turned off faster. To fix this, Timer 1A was dedicated to the survival timer logic, which allowed the countdown timer to decrement every one second.
 
 Another issue occurred when attempting to use hardware PWM on PF1. The PWM configuration conflicted with the GPIO initialization in our project, which caused the hardware PWM to not work as intended and would not decrease brightness. To resolve this, software PWM was utilized and used a periodic timer to update PF1 manually. This allowed for the LED brightness to vary based on how many hunger LEDs remained lit. 
 
